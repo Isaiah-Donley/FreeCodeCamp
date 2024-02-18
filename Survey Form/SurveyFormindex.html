@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1 id="title">This is the title</h1>
+    <p id="description">Description</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label> <!-- Added 'for' attribute and linked it to the input using 'id' -->
+        <input id="name" name="name" placeholder="Enter Name" type="text" required>
+        <label id="email-label" for="email">Email</label> <!-- Added 'for' attribute and linked it to the input using 'id' -->
+        <input id="email" name="email" placeholder="Enter Email" type="email" required>
+        <label id="number-label" for="number">Number</label> <!-- Added 'for' attribute and linked it to the input using 'id' -->
+        <input id="number" name="number" placeholder="Enter Number" type="number" min="50" max="100">
+        <select id="dropdown" name="dropdown"> <!-- Added a 'name' attribute to the select element -->
+          <option value="Option 1">Option 1</option> <!-- Added option elements inside the select element -->
+          <option value="Option 2">Option 2</option>
+        </select>
+        <label for="fish">Select a Fish:</label> <!-- Added a label for the radio buttons group -->
+        <input type="radio" value="Red Fish" name="fish" id="red-fish"> <!-- Added 'id' for each radio button -->
+        <input type="radio" value="Blue Fish" name="fish" id="blue-fish"> <!-- Added 'id' for each radio button -->
+        <label for="checkboxes">Select checkboxes:</label> <!-- Added a label for the checkboxes -->
+        <input type="checkbox" value="Deez" id="deez"> <!-- Added 'id' for each checkbox -->
+        <input type="checkbox" value="Nuts" id="nuts"> <!-- Added 'id' for each checkbox -->
+        <textarea id="comments" name="comments"></textarea> <!-- Added 'name' attribute to the textarea -->
+        <input id="submit" type="submit" value="Submit"> <!-- Added 'value' attribute to the submit button -->
+    </form>
+  </body>
+</html>
